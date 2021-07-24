@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    @variants responsive {
+        .bg-img {
+            @apply bg-no-repeat bg-cover bg-center;
+        }
+    }
+    .--font-primary {
+        font-family: var(--font-primary);
+        font-weight: 400;
+    }
+
+    .--font-secondary {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+    }
+
+    .--font-tertiary {
+        font-family: var(--font-tertiary);
+        font-weight: 200;
+    }
+
+    ._grid {
+        @apply content-center md:gap-8 grid-cols-12 grid col-span-full;
+    }
+    ._flex {
+        @apply flex justify-start items-center;
+    }
+    ._title {
+        @apply text-8 leading-13 md:text-16 md:leading-11 font-bold;
+    }
+}
+
+@layer utilities {
+    @variants responsive {
+        .col-span-full-2 {
+            grid-column: 2 / -2;
+        }
+
+        .col-span-full-3 {
+            grid-column: 3 / -3;
+        }
+    }
+}

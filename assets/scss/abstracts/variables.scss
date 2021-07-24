@@ -1,0 +1,18 @@
+$phone: 767px;
+$tablet: 1200px;
+$laptop: 1600px;
+$fullHD: 1920px;
+$screen2k: 2400px;
+$projectWidth: 1920;
+$projectWidthMobile: 375;
+
+:root {
+    --gray: #7c7c7c;
+    --white: #ffffff;
+    --black: #222222;
+    --transition: 0.3s all ease-in-out;
+    --font-primary: 'Teko', serif;
+
+    --scroll-thumb: #ffffff;
+    --scroll-track: #000000;
+}

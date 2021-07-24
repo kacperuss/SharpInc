@@ -1,0 +1,33 @@
+p + p {
+    margin-top: 1em;
+}
+
+main {
+    width: 100%;
+    max-width: #{$fullHD};
+    margin: 0 auto;
+}
+
+img,
+svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    &.--bg {
+        object-fit: cover;
+    }
+}
+
+.cartesian {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    & > * {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}

@@ -1,46 +1,48 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+    target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'SharpInc',
-    htmlAttrs: {
-      lang: 'en'
+    server: {
+        port: 777,
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+    head: {
+        title: 'Sharp Inc',
+        htmlAttrs: {
+            lang: 'en',
+        },
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { hid: 'description', name: 'description', content: '' },
+            { name: 'format-detection', content: 'telephone=no' },
+        ],
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap',
+            },
+        ],
+        // script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', async: false, defer: false }],
+    },
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+    tailwindcss: {
+        cssPath: '~/assets/scss/vendors/tailwind.css',
+        configPath: 'tailwind.config.js',
+    },
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+    css: ['./assets/scss/main.scss'],
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-  ],
+    plugins: ['~/plugins/global.js'],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+    components: true,
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+    buildModules: ['@nuxtjs/tailwindcss'],
+
+    modules: [],
+    styleResources: {
+        scss: ['./assets/scss/abstracts.scss'],
+    },
+
+    build: {},
 }

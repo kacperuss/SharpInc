@@ -1,0 +1,11 @@
+@use "sass:math";
+
+@function vw($px) {
+    $vw: (#{math.div($px, $projectWidth) * 100});
+    @return clamp(#{1 + px}, #{$vw + vw}, #{$px + px});
+}
+
+@function vw_m($px) {
+    $vw: (#{math.div($px, $projectWidthMobile) * 100});
+    @return $vw + vw;
+}
