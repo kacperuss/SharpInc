@@ -2,9 +2,9 @@
     <main>
         <div class="bg-gradient-to-b from-black to-blue-900">
             <div class="cartesian h-screen">
-                <!-- <Transform class="w-30 h-30" :bloom="[30, 0.3]" class_rot="anim-rotate --anim-speed-900">
+                <Transform class="w-30 h-30" :bloom="[30, 0.3]" class_rot="anim-rotate --anim-speed-900">
                     <img :src="require('~/assets/svg/heightmap_heli.svg')" />
-                </Transform> -->
+                </Transform>
             </div>
             <div class="h-screen"></div>
         </div>
