@@ -34,7 +34,7 @@ export default {
 
     plugins: ['~/plugins/global.js'],
 
-    components: true,
+    components: ['~/components/', '~/components/blocks/', '~/components/elements/'],
 
     buildModules: ['@nuxtjs/tailwindcss'],
 

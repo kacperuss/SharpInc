@@ -5,7 +5,7 @@
                 animation-duration: #{$i * 0.1}s;
             }
         }
-        @for $i from 3 through 10 {
+        @for $i from 3 through 30 {
             &-#{$i*1000} {
                 animation-duration: #{$i}s;
             }
@@ -27,6 +27,21 @@
 
 .anim-rotate {
     animation-name: anim-rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anim-bg-scroll {
+    from {
+        background-position-y: 0%;
+    }
+    to {
+        background-position-y: calc(100% - 100vh);
+    }
+}
+
+.anim-bg-scroll {
+    animation-name: anim-bg-scroll;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }

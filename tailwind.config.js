@@ -32,10 +32,10 @@ module.exports = {
             colors: {
                 transparent: 'transparent',
                 current: 'currentColor',
-                orange: '#ff774f',
-                black: '#222222',
-                lightBlack: '#010101',
-                grey: '#7c7c7c',
+                // orange: '#ff774f',
+                // black: '#222222',
+                // lightBlack: '#010101',
+                // grey: '#7c7c7c',
             },
             gridRow: () => {
                 let ret = {}
